@@ -285,6 +285,19 @@
         .bg-light {
             padding: 5rem 0 !important; /* Light background'lu sectionlar için */
         }
+        .spacer-container {
+        width: 100%;
+        height: 1rem; /* Boşluk yüksekliği */
+        border-top: 1px solid #ccc; /* İnce çizgi */
+        margin-bottom: 1rem;
+        }
+
+        /* Masaüstü görünümünde gizle */
+        @media (min-width: 769px) {
+            .spacer-container {
+                display: none;
+            }
+        }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -334,9 +347,7 @@
                 
                 margin-bottom: 2rem;
             }
-            #contact .container {
-                padding-bottom: 2rem !important;
-            }   
+            
         }
     </style>
 </head>
@@ -479,7 +490,7 @@
             </div>
         </div>
     </section>
-
+    <div class="spacer-container"></div>
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
